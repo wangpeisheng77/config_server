@@ -1,0 +1,2 @@
+# config_server
+用来存放springcloud学习中的config配置文件
