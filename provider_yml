@@ -1,8 +1,8 @@
 server:
-  port: 7102
+  port: 7101
 spring:
   application:
-    name: provider
+    name: PROVIDER
 hystrix:
   command:
     default:
