@@ -1,2 +1,22 @@
 server:
   port: 7102
+eureka:
+  instance:
+    hostname: provider2
+    client:
+    service-url:
+      defaultZone: http://eureka1:8761/eureka/
+spring:
+  application:
+    name: PROVIDER
+hystrix:
+  command:
+    default:
+      circuitBreaker:
+        requestVolumeThreshold: 10
+        sleepWindowInMilliseconds: 10000
+        errorThresholdPercentage: 60
+      execution:
+      isolation:
+        thread:
+          timeoutInMilliseconds: 10000
